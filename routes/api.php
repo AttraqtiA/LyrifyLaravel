@@ -23,8 +23,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('create_user', [UserController::class, 'createUser']);
 Route::post('login', [AuthenticationController::class, 'login'])->name('login');
 
-Route::middleware(['auth:sanctum'])->group(
-    function(){
+// Route::middleware(['auth:sanctum'])->group(
+//     function(){
         Route::get('all_user', [UserController::class, 'getAllUser']);
         Route::get('check_password', [UserController::class, 'checkPassword']);
 
@@ -32,5 +32,5 @@ Route::middleware(['auth:sanctum'])->group(
         Route::delete('delete_user', [UserController::class, 'deleteUser']);
 
         Route::delete('logout', [AuthenticationController::class, 'logout']);
-    }
-);
+//     }
+// );
