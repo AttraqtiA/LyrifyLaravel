@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\UserResource;
@@ -31,9 +31,6 @@ class UserController extends Controller
         return $check;
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function createUser(Request $request)
     {
         try{
@@ -59,17 +56,6 @@ class UserController extends Controller
         }
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function updateUser(Request $request)
     {
         if(!empty($request->email)){
