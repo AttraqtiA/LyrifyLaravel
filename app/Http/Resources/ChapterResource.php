@@ -3,9 +3,9 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class UserResource extends JsonResource
+class ChapterResource extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -16,12 +16,10 @@ class UserResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => $this->name,
+            'title' => $this->title,
             'description' => $this->description,
-            'birthdate' => $this->birthdate,
-            'achievement' => $this->achievement,
-            'email' => $this->email,
-            'password' => $this->password,
+            'total_point' => $this->total_point,
+            'status' => $this->status,
             'image' => $this->image,
         ];
     }
