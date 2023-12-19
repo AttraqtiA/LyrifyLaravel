@@ -17,14 +17,20 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+     public function history()
+     {
+         return $this->hasMany(History::class);
+     }
+
     protected $fillable = [
         'name',
-        'bio',
-        'birthdate',
-        'gender',
-        'profile_picture',
+        'image',
         'email',
         'password',
+        'birthdate',
+        'description',
+        'achievement',
     ];
 
     /**

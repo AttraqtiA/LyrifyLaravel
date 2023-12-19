@@ -20,6 +20,32 @@ class UserController extends Controller
         return UserResource::collection($users);
     }
 
+    public function getUser($id)
+    {
+        try {
+            $user = User::find($id);
+            if ($user) {
+                return response()->json([
+                    'status' => Response::HTTP_OK,
+                    'message' => 'User retrieved successfully',
+                    'data' => new UserResource($user),
+                ]);
+            }
+
+            return response()->json([
+                'status' => Response::HTTP_NOT_FOUND,
+                'message' => 'User not found',
+                'data' => [],
+            ]);
+        } catch (Exception $e) {
+            return response()->json([
+                'status' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                'message' => $e->getMessage(),
+                'data' => [],
+            ]);
+        }
+    }
+
     public function checkPassword(){
         $users = User::all();
         $check = [];

@@ -22,9 +22,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // http://127.0.0.1:8000/api/all_user
 Route::post('create_user', [UserController::class, 'createUser']);
 Route::post('login', [AuthenticationController::class, 'login'])->name('login');
+Route::get('user/{id}', [UserController::class, 'getUser']);
 
-// Route::middleware(['auth:sanctum'])->group(
-//     function(){
+Route::middleware(['auth:sanctum'])->group(
+    function(){
         Route::get('all_user', [UserController::class, 'getAllUser']);
         Route::get('check_password', [UserController::class, 'checkPassword']);
 
@@ -32,5 +33,5 @@ Route::post('login', [AuthenticationController::class, 'login'])->name('login');
         Route::delete('delete_user', [UserController::class, 'deleteUser']);
 
         Route::delete('logout', [AuthenticationController::class, 'logout']);
-//     }
-// );
+    }
+);
