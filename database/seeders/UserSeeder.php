@@ -2,10 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class UserSeeder extends Seeder
 {
@@ -14,22 +15,36 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = new User();
-        $user->name = "Budi Doremi";
-        $user->email = "budi123@gmail.com";
-        $user->password = Hash::make('Budi12345');
-        $user->bio = "Why are you g!";
-        $user->birthdate = "1999-05-20";
-        $user->gender = "Male";
-        $user->save ();
+        DB::table('users')->insert([
+            'name' => 'John Doe',
+            'image' => 1,
+            'email' => 'john.doe@example.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),
+            'birthdate' => '1990-01-01',
+            'registration_date' => now(),
+            'gender' => '0',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'achievement' => 100,
+            'remember_token' => Str::random(10),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
-        $user = new User();
-        $user->name = "Usain Bold";
-        $user->email = "ashcole@gmail.com";
-        $user->password = Hash::make('Ash12345');
-        $user->bio = "Im Fast as f boi!";
-        $user->birthdate = "1999-05-20";
-        $user->gender = "Male";
-        $user->save ();
+        DB::table('users')->insert([
+            'name' => 'Hansen Vendi Agus',
+            'image' => 1,
+            'email' => 'hansenvendia@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),
+            'birthdate' => '1990-01-01',
+            'registration_date' => now(),
+            'gender' => '0',
+            'description' => 'Lu olang punya muka pengen gw hantam a!',
+            'achievement' => 100,
+            'remember_token' => Str::random(10),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
     }
 }

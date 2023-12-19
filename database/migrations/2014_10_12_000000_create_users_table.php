@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->date('birthdate');
             $table->date('registration_date');
+            $table->enum('gender', ['0', '1']);
             $table->string('description');
             $table->integer('achievement');
             $table->rememberToken();
