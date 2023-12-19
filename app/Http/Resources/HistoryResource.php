@@ -15,6 +15,7 @@ class HistoryResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'user_id' => $this->user_id,
             'chapter_id' => $this->chapter_id,
             'last_played' => $this->last_played,
