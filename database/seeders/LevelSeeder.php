@@ -13,11 +13,15 @@ class LevelSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('levels')->insert([
-            'difficulty' => 'Normal',
-        ]);
-        DB::table('levels')->insert([
-            'difficulty' => 'Hard',
-        ]);
+        // DB::table('levels')->insert([
+        //     'difficulty' => 'Normal',
+        //     'chapter_id' => 1,
+        //     'music_id' => 1,
+        // ]);
+        // DB::table('levels')->insert([
+        //     'difficulty' => 'Hard',
+        //     'chapter_id' => 1,
+        //     'music_id' => 1,
+        // ]);
     }
 }
