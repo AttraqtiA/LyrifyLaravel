@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class LevelSeeder extends Seeder
 {
@@ -12,6 +13,11 @@ class LevelSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        DB::table('levels')->insert([
+            'difficulty' => 'Normal',
+        ]);
+        DB::table('levels')->insert([
+            'difficulty' => 'Hard',
+        ]);
     }
 }
