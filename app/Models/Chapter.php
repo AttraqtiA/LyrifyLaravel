@@ -9,14 +9,24 @@ class Chapter extends Model
 {
     use HasFactory;
 
+    // public function history()
+    // {
+    //     return $this->hasMany(History::class);
+    // }
+
+    // public function level()
+    // {
+    //     return $this->hasMany(Level::class);
+    // }
+
     public function history()
     {
-        return $this->hasMany(History::class);
+        return $this->belongsToMany(User::class, 'histories');
     }
 
     public function level()
     {
-        return $this->hasMany(Level::class);
+        return $this->belongsToMany(Music::class, 'levels');
     }
 
     protected $fillable = [

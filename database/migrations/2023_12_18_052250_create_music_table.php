@@ -15,8 +15,8 @@ return new class extends Migration
         Schema::create('levels', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('chapter_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('music_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('chapter_id')->constrained();
+            $table->foreignId('music_id')->constrained();
             $table->string('difficulty');
         });
     }

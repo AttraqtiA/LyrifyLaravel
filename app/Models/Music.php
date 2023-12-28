@@ -10,10 +10,16 @@ class Music extends Model
     use HasFactory;
 
 
+    // public function level()
+    // {
+    //     return $this->hasMany(Level::class);
+    // }
+
     public function level()
     {
-        return $this->hasMany(Level::class);
+        return $this->belongsToMany(Chapter::class, 'levels');
     }
+
 
     protected $fillable = [
         'challenge_type',

@@ -18,11 +18,14 @@ class User extends Authenticatable
      * @var array<int, string>
      */
 
+    //  public function history()
+    //  {
+    //      return $this->belongsToMany(History::class);
+    //  }
      public function history()
      {
-         return $this->hasMany(History::class);
+         return $this->belongsToMany(Chapter::class, 'histories');
      }
-
     protected $fillable = [
         'name',
         'image',

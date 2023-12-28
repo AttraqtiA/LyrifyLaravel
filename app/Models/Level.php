@@ -10,15 +10,15 @@ class Level extends Model
     use HasFactory;
 
 
-    public function chapter()
-    {
-        return $this->belongsTo(Chapter::class);
-    }
+    // public function chapter()
+    // {
+    //     return $this->belongsTo(Chapter::class);
+    // }
 
-    public function music()
-    {
-        return $this->belongsTo(Music::class);
-    }
+    // public function music()
+    // {
+    //     return $this->belongsTo(Music::class);
+    // }
 
     protected $fillable = [
         'chapter_id',

@@ -9,15 +9,15 @@ class History extends Model
 {
     use HasFactory;
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+    // public function user()
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 
-    public function chapter()
-    {
-        return $this->belongsTo(Chapter::class);
-    }
+    // public function chapter()
+    // {
+    //     return $this->belongsTo(Chapter::class);
+    // }
 
     protected $fillable = [
         'user_id',
