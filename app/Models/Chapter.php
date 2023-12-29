@@ -29,11 +29,7 @@ class Chapter extends Model
         return $this->belongsToMany(Music::class, 'levels');
     }
 
-    protected $fillable = [
-        'title',
-        'description',
-        'total_point',
-        'status',
-        'image',
+    protected $guarded = [
+        'id'
     ];
 }

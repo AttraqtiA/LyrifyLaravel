@@ -20,9 +20,7 @@ class Level extends Model
     //     return $this->belongsTo(Music::class);
     // }
 
-    protected $fillable = [
-        'chapter_id',
-        'music_id',
-        'difficulty',
+    protected $guarded = [
+        'id'
     ];
 }

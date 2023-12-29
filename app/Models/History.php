@@ -19,9 +19,7 @@ class History extends Model
     //     return $this->belongsTo(Chapter::class);
     // }
 
-    protected $fillable = [
-        'user_id',
-        'chapter_id',
-        'last_played',
+    protected $guarded = [
+        'id'
     ];
 }

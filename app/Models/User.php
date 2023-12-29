@@ -26,15 +26,8 @@ class User extends Authenticatable
      {
          return $this->belongsToMany(Chapter::class, 'histories');
      }
-    protected $fillable = [
-        'name',
-        'image',
-        'email',
-        'password',
-        'birthdate',
-        'description',
-        'gender',
-        'achievement',
+     protected $guarded = [
+        'id'
     ];
 
     /**

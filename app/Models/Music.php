@@ -21,17 +21,7 @@ class Music extends Model
     }
 
 
-    protected $fillable = [
-        'challenge_type',
-        'title',
-        'game',
-        'lyric',
-        'audio',
-        'artist',
-        'year_released',
-        'guess_duration',
-        'status',
-        'point',
-        'image',
+    protected $guarded = [
+        'id'
     ];
 }
