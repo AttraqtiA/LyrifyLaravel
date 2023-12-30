@@ -18,7 +18,7 @@ class MusicResource extends JsonResource
             'id' => $this->id,
             'challenge_type' => $this->challenge_type,
             'title' => $this->title,
-            'game' => $this->game,
+            'genre' => $this->genre,
             'lyric' => $this->lyric,
             // 'audio' => $this->audio,
             'artist' => $this->artist,

@@ -20,7 +20,6 @@ class Music extends Model
         return $this->belongsToMany(Chapter::class, 'levels');
     }
 
-
     protected $guarded = [
         'id'
     ];

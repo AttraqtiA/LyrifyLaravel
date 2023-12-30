@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class HistoryController extends Controller
 {
-    public function getAllChapter()
+    public function getAllhistory()
     {
         $history = History::all();
         return HistoryResource::collection($history);

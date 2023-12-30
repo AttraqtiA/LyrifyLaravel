@@ -52,4 +52,5 @@ Route::get('/musics', [MusicController::class, 'getAlllmusic']);
         Route::delete('logout', [AuthenticationController::class, 'logout']);
     // }
 // );
+        // Route::apiResource('user',UserController::class);
 
