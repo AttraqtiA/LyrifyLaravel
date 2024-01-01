@@ -24,7 +24,7 @@ class MusicSeeder extends Seeder
             'guess_duration' => 0,
             'status' => true,
             'point' => 0,
-            'image' => 1,
+            'image' => 'picture_1',
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Type 2',
@@ -37,7 +37,7 @@ class MusicSeeder extends Seeder
             'guess_duration' => 0,
             'status' => true,
             'point' => 0,
-            'image' => 2,
+            'image' => 'picture_1',
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Type 3',
@@ -50,7 +50,7 @@ class MusicSeeder extends Seeder
             'guess_duration' => 0,
             'status' => false,
             'point' => 0,
-            'image' => 3,
+            'image' => 'picture_2',
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Type 4',
@@ -63,7 +63,7 @@ class MusicSeeder extends Seeder
             'guess_duration' => 0,
             'status' => true,
             'point' => 0,
-            'image' => 4,
+            'image' => 'picture_2',
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Type 5',
@@ -76,7 +76,7 @@ class MusicSeeder extends Seeder
             'guess_duration' => 0,
             'status' => false,
             'point' => 0,
-            'image' => 5,
+            'image' => 'picture_3',
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Type 6',
@@ -89,7 +89,7 @@ class MusicSeeder extends Seeder
             'guess_duration' => 0,
             'status' => false,
             'point' => 0,
-            'image' => 6,
+            'image' => 'picture_3',
         ]);
     }
 }

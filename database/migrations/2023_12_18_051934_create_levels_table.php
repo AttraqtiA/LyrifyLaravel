@@ -25,7 +25,7 @@ return new class extends Migration
             $table->integer('guess_duration');
             $table->boolean('status');
             $table->integer('point');
-            $table->integer('image');
+            $table->string('image');
         });
     }
 

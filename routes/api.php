@@ -46,7 +46,8 @@ Route::get('/musics', [MusicController::class, 'getAlllmusic']);
         Route::get('all_user', [UserController::class, 'getAllUser']);
         Route::get('check_password', [UserController::class, 'checkPassword']);
 
-        Route::patch('update_user', [UserController::class, 'updateUser']);
+        Route::patch('update_user/{id}', [UserController::class, 'updateUser']);
+
         Route::delete('delete_user', [UserController::class, 'deleteUser']);
 
         Route::delete('logout', [AuthenticationController::class, 'logout']);
