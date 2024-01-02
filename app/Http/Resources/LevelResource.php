@@ -16,9 +16,9 @@ class LevelResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'user_id' => $this->user_id,
+            'music_id' => $this->music_id,
             'chapter_id' => $this->chapter_id,
-            'last_played' => $this->last_played,
+            'difficulty' => $this->difficulty,
         ];
     }
 }
