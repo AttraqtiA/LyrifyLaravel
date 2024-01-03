@@ -20,7 +20,6 @@ return new class extends Migration
             $table->integer('total_point');
             $table->boolean('status');
             $table->integer('image');
-
         });
     }
 

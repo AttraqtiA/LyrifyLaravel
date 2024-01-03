@@ -26,6 +26,7 @@ class User extends Authenticatable
      {
          return $this->belongsToMany(Chapter::class, 'histories');
      }
+
      protected $guarded = [
         'id'
     ];

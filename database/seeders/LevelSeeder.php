@@ -25,22 +25,22 @@ class LevelSeeder extends Seeder
         ]);
         DB::table('levels')->insert([
             'chapter_id' => 2,
-            'music_id' => 4,
+            'music_id' => 3,
             'difficulty' => 'Normal',
         ]);
         DB::table('levels')->insert([
             'chapter_id' => 2,
-            'music_id' => 5,
+            'music_id' => 4,
             'difficulty' => 'Hard',
         ]);
         DB::table('levels')->insert([
             'chapter_id' => 3,
-            'music_id' => 7,
+            'music_id' => 5,
             'difficulty' => 'Normal',
         ]);
         DB::table('levels')->insert([
             'chapter_id' => 3,
-            'music_id' => 8,
+            'music_id' => 6,
             'difficulty' => 'Hard',
         ]);
     }
