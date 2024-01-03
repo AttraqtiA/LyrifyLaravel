@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('description');
             $table->integer('total_point');
             $table->boolean('status');
-            $table->integer('image');
+            $table->string('image');
         });
     }
 

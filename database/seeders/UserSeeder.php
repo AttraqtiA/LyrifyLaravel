@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'John Doe',
-            'image' => 1,
+            'image' => "1",
             'email' => 'john.doe@example.com',
             'email_verified_at' => now(),
             'password' => Hash::make('password'),
@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
             'registration_date' => now(),
             'gender' => '0',
             'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'achievement' => 100,
+            'achievement' => 0,
             'remember_token' => Str::random(10),
             'created_at' => now(),
             'updated_at' => now(),
@@ -33,15 +33,15 @@ class UserSeeder extends Seeder
 
         DB::table('users')->insert([
             'name' => 'Hansen Vendi Agus',
-            'image' => 1,
-            'email' => 'hansenvendiagus@gmail.com',
+            'image' => "1",
+            'email' => 'hansenvendiagusabc@gmail.com',
             'email_verified_at' => now(),
             'password' => Hash::make('password'),
             'birthdate' => '1990-01-01',
             'registration_date' => now(),
             'gender' => '0',
             'description' => 'Lu olang punya muka pengen gw hantam a!',
-            'achievement' => 100,
+            'achievement' => 0,
             'remember_token' => Str::random(10),
             'created_at' => now(),
             'updated_at' => now(),

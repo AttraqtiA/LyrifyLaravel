@@ -14,32 +14,18 @@ class ChapterSeeder extends Seeder
     public function run(): void
     {
         DB::table('chapters')->insert([
-            'title' => 'Chapter 1',
-            'description'  => 'Chapter 1 Desc',
-            'total_point' => 100,
-            'status' => true,
-            'image' => 1
+            'title' => '"Melodic Radiance: Exploring the Pop Realm"',
+            'description' => "Embark on a melodic journey through the world of Pop in this chapter. Engage in quests that test your rhythmic prowess and discover the diverse landscapes of Pop music.",
+            'total_point' => 0,
+            'status' => false,
+            'image' => 'pop.png'
         ]);
         DB::table('chapters')->insert([
-            'title' => 'Chapter 2',
-            'description'  => 'Chapter 2 Desc',
-            'total_point' => 100,
-            'status' => true,
-            'image' => 2
-        ]);
-        DB::table('chapters')->insert([
-            'title' => 'Chapter 3',
-            'description'  => 'Chapter 3 Desc',
-            'total_point' => 100,
-            'status' => true,
-            'image' => 3
-        ]);
-        DB::table('chapters')->insert([
-            'title' => 'Chapter 4',
-            'description'  => 'Chapter 4 Desc',
-            'total_point' => 100,
-            'status' => true,
-            'image' => 4
+            'title' => '"Urban Chronicles: Navigating the Hip Hop Scene"',
+            'description' => "Immerse yourself in the dynamic world of Hip Hop in this chapter. Dive into electrifying beats, engage in challenges showcasing your rhythmic and lyrical finesse, and explore the influential evolution of Hip Hop.",
+            'total_point' => 0,
+            'status' => false,
+            'image' => 'hiphop.png'
         ]);
     }
 }
