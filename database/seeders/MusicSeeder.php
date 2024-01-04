@@ -13,7 +13,7 @@ class MusicSeeder extends Seeder
      */
     public function run(): void
     {
-        //FIX YOU
+        //FIX YOU (AMAN)
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
             'title' => 'Fix You',
@@ -53,7 +53,7 @@ class MusicSeeder extends Seeder
             'point' => 0,
             'image' => 'fix_you.jpg',
         ]);
-        //LOVE STORY
+        //LOVE STORY (AMAN)
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
             'title' => 'Love Story',
@@ -94,7 +94,7 @@ class MusicSeeder extends Seeder
             'point' => 0,
             'image' => 'love_story.png',
         ]);
-        //VIVA LA VIDA
+        //VIVA LA VIDA (AMAN)
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
             'title' => 'Viva La Vida',
@@ -134,7 +134,7 @@ class MusicSeeder extends Seeder
             'point' => 0,
             'image' => 'vivalavida.jpg',
         ]);
-        //REWRITE TEH STARS
+        //REWRITE TEH STARS (AMAN)
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
             'title' => 'Rewrite The Stars',
@@ -174,7 +174,7 @@ class MusicSeeder extends Seeder
             'point' => 0,
             'image' => 'greatest_showman.jpg',
         ]);
-        //PREFECT
+        //PREFECT (AMAN)
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
             'title' => 'Perfect',
@@ -215,7 +215,7 @@ class MusicSeeder extends Seeder
             'image' => 'one_direction.png',
         ]);
         //CHAPTER 2
-        //LALALA
+        //LALALA (AMAN)
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
             'title' => 'Lalala',
@@ -234,7 +234,7 @@ class MusicSeeder extends Seeder
             'title' => 'Lalala',
             'genre' => 'Hip-Hop',
             'lyric' => 'Modest with my jewels but check the bank Finally got that money, say my thanks',
-            'youtube_link' => 'https://youtu.be/2b3EzAqv_vM?si=keXtiYYv6mim5e98',
+            'youtube_link' => 'https://youtu.be/3NIWWXfJ33A',
             'artist' => 'Y2K, bbno$',
             'year_released' => '2019',
             'guess_duration' => 0,
@@ -247,7 +247,7 @@ class MusicSeeder extends Seeder
             'title' => 'Lalala',
             'genre' => 'Hip-Hop',
             'lyric' => 'Bankroll so low, I got nothing else that I can withdraw Ran out the door',
-            'youtube_link' => 'https://youtu.be/3NIWWXfJ33A?si=FZKt2A_hxIR5Eb1_',
+            'youtube_link' => 'https://youtu.be/2b3EzAqv_vM?si=RqHYTvAO6Y-RQGE_',
             'artist' => 'Y2K, bbno$',
             'year_released' => '2019',
             'guess_duration' => 0,
@@ -263,7 +263,7 @@ class MusicSeeder extends Seeder
             'lyric' => "We got history
             Got me feeling the nostalgia
             When you look at me ",
-            'youtube_link' => 'https://youtu.be/kAQIMXMUUIU',
+            'youtube_link' => 'https://youtu.be/Ecy7nJ_EstE',
             'artist' => 'Rich Brian',
             'year_released' => '2018',
             'guess_duration' => 0,
@@ -276,7 +276,7 @@ class MusicSeeder extends Seeder
             'title' => 'History',
             'genre' => 'Hip-Hop',
             'lyric' => 'I know you said "gimme a hug", and I said "gimme a break"',
-            'youtube_link' => 'https://youtu.be/M0UbSzyjKW0',
+            'youtube_link' => 'https://youtu.be/e_X3LLOEQp8',
             'artist' => 'Rich Brian',
             'year_released' => '2018',
             'guess_duration' => 0,
@@ -284,6 +284,7 @@ class MusicSeeder extends Seeder
             'point' => 0,
             'image' => 'history.jpg',
         ]);
+        //belum upload youtube
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
             'title' => 'History',
@@ -291,7 +292,7 @@ class MusicSeeder extends Seeder
             'lyric' => "All these occasions
             Let's work it out with me
             I don't think it hurts to give another try on it",
-            'youtube_link' => 'https://youtu.be/3NIWWXfJ33A?si=FZKt2A_hxIR5Eb1_',
+            'youtube_link' => 'https://youtu.be/e_X3LLOEQp8',
             'artist' => 'Rich Brian',
             'year_released' => '2018',
             'guess_duration' => 0,
@@ -306,7 +307,7 @@ class MusicSeeder extends Seeder
             'genre' => 'Hip-Hop',
             'lyric' => "So what we get drunk
             So what we smoke weed",
-            'youtube_link' => 'https://youtu.be/kAQIMXMUUIU',
+            'youtube_link' => 'https://youtu.be/ZFYj9x4os5Q',
             'artist' => 'Wiz Khalifa & Snoop Dogg',
             'year_released' => '2021',
             'guess_duration' => 0,
@@ -321,7 +322,7 @@ class MusicSeeder extends Seeder
             'lyric' => "So what we go out
             That's how it's supposed to be
             Living young and wild and free",
-            'youtube_link' => 'https://youtu.be/M0UbSzyjKW0',
+            'youtube_link' => 'https://youtu.be/H06OkMTSzyI',
             'artist' => 'Wiz Khalifa & Snoop Dogg',
             'year_released' => '2021',
             'guess_duration' => 0,
@@ -336,7 +337,7 @@ class MusicSeeder extends Seeder
             'lyric' => "Uh, and I don't even care
             'Cause if me and my team in there
             There's gon' be some weed in the air",
-            'youtube_link' => 'https://youtu.be/3NIWWXfJ33A?si=FZKt2A_hxIR5Eb1_',
+            'youtube_link' => 'https://youtu.be/gEmJqtgXaWE',
             'artist' => 'Wiz Khalifa & Snoop Dogg',
             'year_released' => '2021',
             'guess_duration' => 0,
@@ -351,7 +352,7 @@ class MusicSeeder extends Seeder
             'genre' => 'Hip-Hop',
             'lyric' => "So you're still thinking of me
             Just like I know you should",
-            'youtube_link' => 'https://youtu.be/kAQIMXMUUIU',
+            'youtube_link' => 'https://youtu.be/k0XXJPlr0eI',
             'artist' => 'Khalid            ',
             'year_released' => '2017',
             'guess_duration' => 0,
@@ -365,7 +366,7 @@ class MusicSeeder extends Seeder
             'genre' => 'Hip-Hop',
             'lyric' => "Young dumb
             Young, young dumb and broke",
-            'youtube_link' => 'https://youtu.be/M0UbSzyjKW0',
+            'youtube_link' => 'https://youtu.be/O07ygvv5d_o',
             'artist' => 'Khalid',
             'year_released' => '2017',
             'guess_duration' => 0,
@@ -377,8 +378,8 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Young Dumb & Broke',
             'genre' => 'Hip-Hop',
-            'lyric' => "Jump then we think, leave it all in the game of love Love",
-            'youtube_link' => 'https://youtu.be/3NIWWXfJ33A?si=FZKt2A_hxIR5Eb1_',
+            'lyric' => "Jump then we think, leave it all in the game of love",
+            'youtube_link' => 'https://youtu.be/42RwYoJSE80',
             'artist' => 'Khalid',
             'year_released' => '2017',
             'guess_duration' => 0,
@@ -421,7 +422,7 @@ class MusicSeeder extends Seeder
             'genre' => 'Hip-Hop',
             'lyric' => "'Cause I know the way to get 'em motivated
             I make elevating music, you make elevator music",
-            'youtube_link' => 'https://youtu.be/3NIWWXfJ33A?si=FZKt2A_hxIR5Eb1_',
+            'youtube_link' => 'https://youtu.be/0lTTtrIjhz4',
             'artist' => 'Eminem',
             'year_released' => '2013',
             'guess_duration' => 0,
