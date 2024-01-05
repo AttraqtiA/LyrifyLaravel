@@ -16,12 +16,14 @@ class HistorySeeder extends Seeder
         DB::table('histories')->insert([
             'user_id' => 1,
             'chapter_id' => 1,
+            'total_point' => 2500,
             'last_played' => '2023-01-01',
         ]);
 
         DB::table('histories')->insert([
             'user_id' => 2,
             'chapter_id' => 2,
+            'total_point' => 2500,
             'last_played' => '2023-02-01',
         ]);
     }

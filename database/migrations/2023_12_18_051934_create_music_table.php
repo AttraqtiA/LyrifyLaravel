@@ -18,7 +18,13 @@ return new class extends Migration
             $table->string('title');
             $table->string('genre');
             $table->string('lyric');
-            // $table->integer('audio');
+            $table->string('option1');
+            $table->string('option2');
+            $table->string('option3');
+            $table->string('option4');
+            $table->string('option5');
+            $table->string('option6');
+            $table->integer('answer_key');
             $table->string('youtube_link');
             $table->string('artist');
             $table->year('year_released');
