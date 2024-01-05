@@ -27,7 +27,7 @@ return new class extends Migration
             $table->integer('answer_key');
             $table->string('youtube_link');
             $table->string('artist');
-            $table->year('year_released');
+            $table->string('year_released');
             $table->integer('guess_duration');
             $table->boolean('status');
             $table->integer('point');

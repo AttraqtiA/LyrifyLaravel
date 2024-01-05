@@ -20,6 +20,11 @@ class Music extends Model
         return $this->belongsToMany(Chapter::class, 'levels');
     }
 
+    public function user_music()
+    {
+        return $this->hasMany(UserMusic::class);
+    }
+
     protected $guarded = [
         'id'
     ];
