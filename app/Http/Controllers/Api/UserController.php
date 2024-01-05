@@ -88,7 +88,7 @@ class UserController extends Controller
             if ($request->hasFile('file')) {
                 $uploadedFile = $request->file('file');
                 $fileName = $this->generateRandomString() . '.' . $uploadedFile->getClientOriginalExtension();
-                $uploadedFile->storeAs('image', $fileName, 'public');
+                $uploadedFile->storeAs('image', $fileName, 'local'); // Update this line
 
                 $user = new User();
                 // Simpan path file baru ke dalam basis data
@@ -134,78 +134,79 @@ class UserController extends Controller
     }
 
     public function updateUser(Request $request, $id)
-{
-    try {
-        // Validasi request
-        $validator = Validator::make($request->all(), [
-            'name' => 'nullable|string|max:255',
-            'email' => 'sometimes|email|unique:users,email,' . $id,
-            'password' => 'sometimes|string|min:6',
-            'description' => 'sometimes|string|nullable',
-            'gender' => 'sometimes|in:0,1',
-            'birthdate' => 'sometimes|date',
-            'file' => 'sometimes|image|mimes:jpeg,png,jpg|max:2048',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'status' => Response::HTTP_BAD_REQUEST,
-                'message' => 'Validation error',
-                'data' => $validator->errors(),
+    {
+        \Log::info($request->all());
+        try {
+            // Validasi request
+            $validator = Validator::make($request->all(), [
+                'name' => 'nullable|string|max:255',
+                'email' => 'sometimes|email|unique:users,email,' . $id,
+                'password' => 'sometimes|string|min:6',
+                'description' => 'sometimes|string|nullable',
+                'gender' => 'sometimes|in:0,1',
+                'birthdate' => 'sometimes|date',
+                'file' => 'sometimes|image|mimes:jpeg,png,jpg|max:2048',
             ]);
-        }
 
-        // Cek apakah pengguna dengan ID yang diberikan ada dalam basis data
-        $user = User::find($id);
+            if ($validator->fails()) {
+                return response()->json([
+                    'status' => Response::HTTP_BAD_REQUEST,
+                    'message' => 'Validation error',
+                    'data' => $validator->errors(),
+                ]);
+            }
 
-        if (!$user) {
+            // Cek apakah pengguna dengan ID yang diberikan ada dalam basis data
+            $user = User::find($id);
+
+            if (!$user) {
+                return response()->json([
+                    'status' => Response::HTTP_NOT_FOUND,
+                    'message' => 'User not found',
+                    'data' => [],
+                ]);
+            }
+
+            // Cek apakah ada file yang diunggah
+            if ($request->hasFile('file')) {
+                $uploadedFile = $request->file('file');
+                $fileName = $this->generateRandomString() . '.' . $uploadedFile->getClientOriginalExtension();
+                $uploadedFile->storeAs('image', $fileName, 'local'); // Update this line
+
+                // Simpan path file baru ke dalam basis data
+                $user->image = 'image/' . $fileName;
+            }
+
+            // Update data pengguna sesuai dengan input yang diberikan
+            $user->name = $request->input('name', $user->name);
+            $user->email = $request->input('email', $user->email);
+
+            // Update password hanya jika diinputkan
+            if ($request->has('password')) {
+                $user->password = Hash::make($request->input('password'));
+            }
+
+            $user->description = $request->input('description', $user->description);
+            $user->gender = $request->input('gender', $user->gender);
+            $user->birthdate = $request->input('birthdate', $user->birthdate);
+
+            // Save changes to the user
+            $user->save();
+
             return response()->json([
-                'status' => Response::HTTP_NOT_FOUND,
-                'message' => 'User not found',
+                'status' => Response::HTTP_OK,
+                'message' => 'Success',
+                'data' => new UserResource($user),
+            ]);
+
+        } catch (Exception $e) {
+            return response()->json([
+                'status' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                'message' => $e->getMessage(),
                 'data' => [],
             ]);
         }
-
-        // Cek apakah ada file yang diunggah
-        if ($request->hasFile('file')) {
-            $uploadedFile = $request->file('file');
-            $fileName = $this->generateRandomString() . '.' . $uploadedFile->getClientOriginalExtension();
-            $uploadedFile->storeAs('image', $fileName, 'public');
-
-            // Simpan path file baru ke dalam basis data
-            $user->image = 'image/' . $fileName;
-        }
-
-        // Update data pengguna sesuai dengan input yang diberikan
-        $user->name = $request->input('name', $user->name);
-        $user->email = $request->input('email', $user->email);
-
-        // Update password hanya jika diinputkan
-        if ($request->has('password')) {
-            $user->password = Hash::make($request->input('password'));
-        }
-
-        $user->description = $request->input('description', $user->description);
-        $user->gender = $request->input('gender', $user->gender);
-        $user->birthdate = $request->input('birthdate', $user->birthdate);
-
-        // Save changes to the user
-        $user->save();
-
-        return response()->json([
-            'status' => Response::HTTP_OK,
-            'message' => 'Success',
-            'data' => new UserResource($user),
-        ]);
-
-    } catch (Exception $e) {
-        return response()->json([
-            'status' => Response::HTTP_INTERNAL_SERVER_ERROR,
-            'message' => $e->getMessage(),
-            'data' => [],
-        ]);
     }
-}
 
 
 
