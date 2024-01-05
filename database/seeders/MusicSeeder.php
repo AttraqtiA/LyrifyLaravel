@@ -386,9 +386,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'History',
             'genre' => 'Hip-Hop',
-            'lyric' => "We got history
-            Got me feeling the nostalgia
-            When you ..... at me ",
+            'lyric' => "We got history. Got me feeling the nostalgia. When you ..... at me ",
             'option1' => 'took',
             'option2' => 'crook',
             'option3' => 'cook',
@@ -429,9 +427,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'History',
             'genre' => 'Hip-Hop',
-            'lyric' => "All these .....
-            Let's work it out with me
-            I don't think it hurts to give another try on it",
+            'lyric' => "All these ...... Let's work it out with me. I don't think it hurts to give another try on it",
             'option1' => 'explosions',
             'option2' => 'cushions',
             'option3' => 'oceans',
@@ -452,9 +448,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Young Wild and Free',
             'genre' => 'Hip-Hop',
-            'lyric' => "Uh, and I don't even care
-            'Cause if me and my ..... in there
-            There's gon' be some weed in the air",
+            'lyric' => "Uh, and I don't even care. 'Cause if me and my ..... in there. There's gon' be some weed in the air",
             'option1' => 'team',
             'option2' => 'steam',
             'option3' => 'dream',
@@ -474,8 +468,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Young Wild and Free',
             'genre' => 'Hip-Hop',
-            'lyric' => "So what we get .....
-            So what we smoke weed",
+            'lyric' => "So what we get ..... So what we smoke weed",
             'option1' => 'drum',
             'option2' => 'drudge',
             'option3' => 'drank',
@@ -495,9 +488,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Young Wild and Free',
             'genre' => 'Hip-Hop',
-            'lyric' => "So what we go out
-            That's how it's ..... to be
-            Living young and wild and free",
+            'lyric' => "So what we go out. That's how it's ..... to be. Living young and wild and free",
             'option1' => 'deposed',
             'option2' => 'exposed',
             'option3' => 'opposed',
@@ -518,8 +509,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Young Dumb & Broke',
             'genre' => 'Hip-Hop',
-            'lyric' => "So you're ..... thinking of me
-            Just like I know you should",
+            'lyric' => "So you're ..... thinking of me. Just like I know you should",
             'option1' => 'spill',
             'option2' => 'skill',
             'option3' => 'still',
@@ -539,8 +529,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Young Dumb & Broke',
             'genre' => 'Hip-Hop',
-            'lyric' => "Young dumb
-            Young, young dumb and .....",
+            'lyric' => "Young dumb. Young, young dumb and .....",
             'option1' => 'choke',
             'option2' => 'joke',
             'option3' => 'broke',
@@ -601,9 +590,7 @@ class MusicSeeder extends Seeder
             'challenge_type' => 'Chapter 2',
             'title' => 'Rap God',
             'genre' => 'Hip-Hop',
-            'lyric' => 'Everybody loves to root for a nuisance
-            Hit the Earth like an asteroid
-            Did nothing but shoot for the Moon .....',
+            'lyric' => 'Everybody loves to root for a nuisance. Hit the Earth like an asteroid. Did nothing but shoot for the Moon .....',
             'option1' => 'since',
             'option2' => 'winch',
             'option3' => 'mince',
