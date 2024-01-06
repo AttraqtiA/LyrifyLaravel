@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -11,12 +12,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_music', function (Blueprint $table) {
+        Schema::create('histories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignId('user_id')->constrained()->onDelete('CASCADE');
             $table->foreignId('music_id')->constrained();
-            $table->integer('point');
+            $table->bigInteger('point')->default(0);
+            $table->date('last_played')->now();
         });
     }
 
@@ -25,6 +27,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_music');
+        Schema::dropIfExists('histories');
     }
+
 };

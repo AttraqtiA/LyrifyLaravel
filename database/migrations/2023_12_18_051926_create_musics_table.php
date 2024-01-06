@@ -28,10 +28,12 @@ return new class extends Migration
             $table->string('youtube_link');
             $table->string('artist');
             $table->string('year_released');
-            $table->integer('guess_duration');
-            $table->boolean('status');
-            $table->integer('point');
-            $table->string('image');
+            $table->integer('guess_duration')->default(30);
+            $table->boolean('status')->default(false);
+            $table->integer('point')->default(0);
+            $table->string('image')->default('LogoDesign.png');
+            $table->string('difficulty');
+
         });
     }
 
@@ -43,3 +45,4 @@ return new class extends Migration
         Schema::dropIfExists('music');
     }
 };
+

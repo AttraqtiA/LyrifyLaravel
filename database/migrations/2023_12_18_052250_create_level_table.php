@@ -17,7 +17,6 @@ return new class extends Migration
             $table->timestamps();
             $table->foreignId('chapter_id')->constrained();
             $table->foreignId('music_id')->constrained();
-            $table->string('difficulty');
         });
     }
 

@@ -18,7 +18,6 @@ class LevelResource extends JsonResource
             'id' => $this->id,
             'music_id' => $this->music_id,
             'chapter_id' => $this->chapter_id,
-            'difficulty' => $this->difficulty,
         ];
     }
 }

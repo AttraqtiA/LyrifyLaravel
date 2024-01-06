@@ -17,8 +17,8 @@ class HistoryResource extends JsonResource
         return [
             'id' => $this->id,
             'user_id' => $this->user_id,
-            'chapter_id' => $this->chapter_id,
-            'all_point' => $this->total_point,
+            'music_id' => $this->music_id,
+            'point' => $this->point,
             'last_played' => $this->last_played,
         ];
      }

@@ -27,11 +27,6 @@ class User extends Authenticatable
          return $this->belongsToMany(Chapter::class, 'histories');
      }
 
-     public function user_music()
-     {
-         return $this->hasMany(UserMusic::class);
-     }
-
      protected $guarded = [
         'id'
     ];

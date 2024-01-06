@@ -18,7 +18,6 @@ class DatabaseSeeder extends Seeder
             ChapterSeeder::class,
             LevelSeeder::class,
             HistorySeeder::class,
-            UserMusicSeeder::class,
         ]);
     }
 }

@@ -34,6 +34,7 @@ class MusicResource extends JsonResource
             'status' => $this->status,
             'point' => $this->point,
             'image' => $this->image,
+            'difficulty' => $this->difficulty,
         ];
     }
 }

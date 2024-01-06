@@ -25,37 +25,47 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 // http://127.0.0.1:8000/api/all_user
-Route::post('create_user', [UserController::class, 'createUser']);
-Route::post('login', [AuthenticationController::class, 'login'])->name('login');
-Route::get('user/{id}', [UserController::class, 'getUser']);
+// Route::post('create_user', [UserController::class, 'createUser']);
+// Route::post('login', [AuthenticationController::class, 'login'])->name('login');
+// Route::get('user/{id}', [UserController::class, 'getUser']);
 
 //CHAPTERS
-Route::get('chapters', [ChapterController::class, 'getAllChapter']);
-Route::get('chapter/{id}', [ChapterController::class, 'getChapter']);
+// Route::get('chapters', [ChapterController::class, 'getAllChapter']);
+// Route::get('chapter/{id}', [ChapterController::class, 'getChapter']);
 
 //HISTORIES
-Route::get('/histories', [HistoryController::class, 'getAllhistory']);
+// Route::get('/histories', [HistoryController::class, 'getAllhistory']);
+// Route::get('/create_history', [HistoryController::class, 'createHistory']);
 
 //LEVELS
-Route::get('/levels', [LevelController::class, 'getAlllevel']);
+// Route::get('/levels', [LevelController::class, 'getAlllevel']);
 
 //MUSICS
-Route::get('/musics', [MusicController::class, 'getAllmusic']);
-
-//USERMUSIC
-Route::get('/user_music', [UserMusicController::class, 'getAlluser_music']);
-
+// Route::get('/musics', [MusicController::class, 'getAllmusic']);
 
 // Route::middleware(['auth:sanctum'])->group(
 //     function(){
-        Route::get('all_user', [UserController::class, 'getAllUser']);
-        Route::get('check_password', [UserController::class, 'checkPassword']);
+        // Route::get('all_user', [UserController::class, 'getAllUser']);
 
-        Route::patch('update_user/{id}', [UserController::class, 'updateUser']);
-        Route::delete('delete_user/{id}', [UserController::class, 'deleteUser']);
+        // Route::patch('update_user/{id}', [UserController::class, 'updateUser']);
+        // Route::delete('delete_user/{id}', [UserController::class, 'deleteUser']);
 
-        Route::delete('logout', [AuthenticationController::class, 'logout']);
+        // Route::delete('logout', [AuthenticationController::class, 'logout']);
     // }
 // );
         // Route::apiResource('user',UserController::class);
 
+//versi urut route list
+Route::get('all_user', [UserController::class, 'getAllUser']);
+Route::get('chapter/{id}', [ChapterController::class, 'getChapter']);
+Route::get('chapters', [ChapterController::class, 'getAllChapter']);
+Route::post('/create_history', [HistoryController::class, 'createHistory']);
+Route::post('create_user', [UserController::class, 'createUser']);
+Route::delete('delete_user/{id}', [UserController::class, 'deleteUser']);
+Route::get('/histories', [HistoryController::class, 'getAllhistory']);
+Route::get('/levels', [LevelController::class, 'getAlllevel']);
+Route::post('login', [AuthenticationController::class, 'login'])->name('login');
+Route::delete('logout', [AuthenticationController::class, 'logout']);
+Route::get('/musics', [MusicController::class, 'getAllmusic']);
+Route::patch('update_user/{id}', [UserController::class, 'updateUser']);
+Route::get('user/{id}', [UserController::class, 'getUser']);

@@ -30,9 +30,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Coldplay',
             'year_released' => '2005',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'fix_you.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -51,8 +52,10 @@ class MusicSeeder extends Seeder
             'year_released' => '2005',
             'guess_duration' => 30,
             'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'fix_you.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -70,9 +73,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Coldplay',
             'year_released' => '2005',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'fix_you.jpeg',
+            'difficulty' => 'Hard',
+
         ]);
         //LOVE STORY (AMAN)
         DB::table('music')->insert([
@@ -91,9 +95,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Taylor Swift',
             'year_released' => '2008',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'love_story.png',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -112,9 +117,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Taylor Swift',
             'year_released' => '2008',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'love_story.png',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -132,9 +138,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Taylor Swift',
             'year_released' => '2008',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'love_story.png',
+            'difficulty' => 'Hard',
+
         ]);
         //VIVA LA VIDA (AMAN)
         DB::table('music')->insert([
@@ -153,9 +160,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Coldplay',
             'year_released' => '2008',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'vivalavida.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -173,9 +181,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Coldplay',
             'year_released' => '2008',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'vivalavida.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -193,9 +202,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Coldplay',
             'year_released' => '2008',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'vivalavida.jpeg',
+            'difficulty' => 'Hard',
+
         ]);
         //REWRITE TEH STARS (AMAN)
         DB::table('music')->insert([
@@ -214,9 +224,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Anne-Marie & James Arthur',
             'year_released' => '2017',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'greatest_showman.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -234,9 +245,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Anne-Marie & James Arthur',
             'year_released' => '2017',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'greatest_showman.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -254,9 +266,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Anne-Marie & James Arthur',
             'year_released' => '2017',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'greatest_showman.jpeg',
+            'difficulty' => 'Hard',
+
         ]);
         //PREFECT (AMAN)
         DB::table('music')->insert([
@@ -275,9 +288,10 @@ class MusicSeeder extends Seeder
             'artist' => 'One Direction',
             'year_released' => '2015',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'one_direction.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -295,9 +309,10 @@ class MusicSeeder extends Seeder
             'artist' => 'One Direction',
             'year_released' => '2015',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'one_direction.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 1',
@@ -315,9 +330,10 @@ class MusicSeeder extends Seeder
             'artist' => 'One Direction',
             'year_released' => '2015',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'one_direction.jpeg',
+            'difficulty' => 'Hard',
+
         ]);
         //CHAPTER 2
         //LALALA (AMAN)
@@ -337,9 +353,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Y2K, bbno$',
             'year_released' => '2019',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'lalala.png',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -357,9 +374,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Y2K, bbno$',
             'year_released' => '2019',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'lalala.png',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -377,9 +395,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Y2K, bbno$',
             'year_released' => '2019',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'lalala.png',
+            'difficulty' => 'Hard',
+
         ]);
         //HISTORY
         DB::table('music')->insert([
@@ -398,9 +417,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Rich Brian',
             'year_released' => '2018',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'history.jpg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -418,9 +438,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Rich Brian',
             'year_released' => '2018',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'history.jpg',
+            'difficulty' => 'Normal',
+
         ]);
         //belum upload youtube
         DB::table('music')->insert([
@@ -439,9 +460,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Rich Brian',
             'year_released' => '2018',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'history.jpg',
+            'difficulty' => 'Hard',
+
         ]);
         //Young Wild and Free
         DB::table('music')->insert([
@@ -460,9 +482,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Wiz Khalifa & Snoop Dogg',
             'year_released' => '2021',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'wild.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -480,9 +503,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Wiz Khalifa & Snoop Dogg',
             'year_released' => '2021',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'wild.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -500,9 +524,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Wiz Khalifa & Snoop Dogg',
             'year_released' => '2021',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'wild.jpeg',
+            'difficulty' => 'Hard',
+
         ]);
         //YOUNG DUMB & BROKE
         DB::table('music')->insert([
@@ -521,9 +546,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Khalid            ',
             'year_released' => '2017',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'young.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -541,9 +567,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Khalid',
             'year_released' => '2017',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'young.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -561,9 +588,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Khalid',
             'year_released' => '2017',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'young.jpeg',
+            'difficulty' => 'Hard',
+
         ]);
         //RAPGOD
         DB::table('music')->insert([
@@ -582,9 +610,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Eminem',
             'year_released' => '2013',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'rap_god.jpeg',
+            'difficulty' => 'Easy',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -602,9 +631,10 @@ class MusicSeeder extends Seeder
             'artist' => 'Eminem',
             'year_released' => '2013',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'rap_god.jpeg',
+            'difficulty' => 'Normal',
+
         ]);
         DB::table('music')->insert([
             'challenge_type' => 'Chapter 2',
@@ -623,9 +653,9 @@ class MusicSeeder extends Seeder
             'artist' => 'Eminem',
             'year_released' => '2013',
             'guess_duration' => 30,
-            'status' => false,
-            'point' => 100,
+            'point' => 0,
             'image' => 'rap_god.jpeg',
+            'difficulty' => 'Hard',
         ]);
     }
 }

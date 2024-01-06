@@ -17,8 +17,6 @@ return new class extends Migration
             $table->timestamps();
             $table->string('title');
             $table->string('description');
-            $table->integer('total_point');
-            $table->boolean('status');
             $table->string('image');
         });
     }
