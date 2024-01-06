@@ -135,7 +135,7 @@ class UserController extends Controller
 
     public function updateUser(Request $request, $id)
     {
-        \Log::info($request->all());
+        // \Log::info($request->all());
         try {
             // Validasi request
             $validator = Validator::make($request->all(), [

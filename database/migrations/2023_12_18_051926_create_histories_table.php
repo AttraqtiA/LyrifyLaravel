@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->foreignId('user_id')->constrained()->onDelete('CASCADE');
             $table->foreignId('chapter_id')->constrained();
-            $table->bigInteger('total_point');
+            $table->bigInteger('all_point');
             $table->date('last_played');
         });
     }

@@ -6,6 +6,7 @@ use App\Http\Controllers\ChapterController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\MusicController;
+use App\Http\Controllers\UserMusicController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -29,7 +30,8 @@ Route::post('login', [AuthenticationController::class, 'login'])->name('login');
 Route::get('user/{id}', [UserController::class, 'getUser']);
 
 //CHAPTERS
-Route::get('/chapters', [ChapterController::class, 'getAllChapter']);
+Route::get('chapters', [ChapterController::class, 'getAllChapter']);
+Route::get('chapter/{id}', [ChapterController::class, 'getChapter']);
 
 //HISTORIES
 Route::get('/histories', [HistoryController::class, 'getAllhistory']);
@@ -38,7 +40,10 @@ Route::get('/histories', [HistoryController::class, 'getAllhistory']);
 Route::get('/levels', [LevelController::class, 'getAlllevel']);
 
 //MUSICS
-Route::get('/musics', [MusicController::class, 'getAlllmusic']);
+Route::get('/musics', [MusicController::class, 'getAllmusic']);
+
+//USERMUSIC
+Route::get('/user_music', [UserMusicController::class, 'getAlluser_music']);
 
 
 // Route::middleware(['auth:sanctum'])->group(

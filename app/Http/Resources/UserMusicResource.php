@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class HistoryResource extends JsonResource
+class UserMusicResource extends JsonResource
 {
     /**
      * Transform the resource collection into an array.
@@ -17,9 +17,8 @@ class HistoryResource extends JsonResource
         return [
             'id' => $this->id,
             'user_id' => $this->user_id,
-            'chapter_id' => $this->chapter_id,
-            'all_point' => $this->total_point,
-            'last_played' => $this->last_played,
+            'music_id' => $this->music_id,
+            'point' => $this->point,
         ];
-     }
+    }
 }
